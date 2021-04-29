@@ -37,8 +37,6 @@ const SignUp = () => {
       .then((response) => [null, response])
       .catch((err) => [err, err]);
 
-      console.log(error, resp);
-
     if (error) {
       Swal.fire('Hubo un error en el proceso de creación!', '', 'error');
     } else {
