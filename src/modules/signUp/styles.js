@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   addButton: {
-    width: '100px',
+    width: '150px',
     height: '45px',
     alignSelf: 'center',
     textTransform: 'unset',

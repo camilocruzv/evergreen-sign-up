@@ -33,7 +33,7 @@ const SignUp = () => {
       userType: data.tipoUsuario,
     };
 
-    const [error, resp] = await axios.post('http://ec2-50-17-107-241.compute-1.amazonaws.com/auth/singup/', params)
+    const [error] = await axios.post(process.env.REACT_APP_BACKEND_URL, params)
       .then((response) => [null, response])
       .catch((err) => [err, err]);
 
@@ -170,7 +170,7 @@ const SignUp = () => {
           />
         </div>
         <div className="form-group">
-          <Button className={classes.addButton} type="submit" color="primary" variant="contained">Sign Up</Button>
+          <Button className={classes.addButton} type="submit" color="primary" variant="contained">Crear Cuenta</Button>
         </div>
       </form>
     </div>
