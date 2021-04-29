@@ -43,7 +43,7 @@ const SignUp = () => {
       Swal.fire('La cuenta se ha creado exitosamente!', '', 'success')
         .then((result) => {
           if (result.isConfirmed) {
-            window.location.href = "http://ec2-34-207-119-94.compute-1.amazonaws.com:3000/";
+            window.location.href = process.env.REACT_APP_LOGIN_URL;
           }
         })
     }
